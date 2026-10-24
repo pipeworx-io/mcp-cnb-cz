@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-cnb-cz",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Czech National Bank (Česká národní banka, ČNB) public API MCP. Keyless.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-d57b1c97352935789ac8479e12c063339f868608e967379430f45850162d3ae2",
-    "sourceCommit": "b0a4b8e2f3f5b3a4c3f9f2c9a73f91b20d32ce11"
+    "sourceHash": "v1-1e42de090782c3ea8708a7a0343769c3a996b829d8818ed9f871487fb942e62d",
+    "sourceCommit": "f1ef7a2f6b9cb1b8da1374ec2fcb28c661582b35"
   }
 }
