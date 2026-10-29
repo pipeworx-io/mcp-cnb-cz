@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-cnb-cz",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Czech National Bank (Česká národní banka, ČNB) public API MCP. Keyless.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-cnb-cz": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "cnb-cz"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-cnb-cz.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/cnb-cz",
   "pipeworx": {
-    "sourceHash": "v1-1e42de090782c3ea8708a7a0343769c3a996b829d8818ed9f871487fb942e62d",
-    "sourceCommit": "f1ef7a2f6b9cb1b8da1374ec2fcb28c661582b35"
+    "mode": "gateway",
+    "slug": "cnb-cz",
+    "gatewaySlug": "cnb-cz",
+    "sourceHash": "v1-9c9705710be8b562d8f741bdc228636d5bc7aa9d70ccf7651b764646fa9a09de",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
